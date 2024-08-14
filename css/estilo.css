@@ -5,7 +5,7 @@
 
 body {
     height: 100vh;
-    background-color: rgb(140, 122, 178);
+    background-color: rgb(77, 142, 172);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -73,3 +73,12 @@ body {
 .btnZerar:active {
     background-color: rgb(23, 180, 188);
 }
+
+.img {
+    width: 30%;
+    display: none;
+    text-align: center;
+    margin-left: 10%;
+
+}
+
