@@ -24,6 +24,7 @@ function IniciarContagem() {
 
 function pararContagem() {
     clearInterval(tempo)
+    audio.pause();
 }
 
 function zerarContagem() {
