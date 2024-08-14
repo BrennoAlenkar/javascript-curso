@@ -7,15 +7,14 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-
-    <p class="teste">DOM</p>
-
-    <input placeholder="Digite um nome" type="text" id="nome"><br>
-
-
-    <button onclick="somarNumeros()">Mudar</button>
-
+    <div class="container">
+        <h1 class="container__titulo">Cronometro Estudo</h1>
+        <p class="res">1500</p>
+        <audio class="som" src="audio/som-alarme.mp3"></audio>
+        <button onclick="IniciarContagem()" class="btnIniciar">Iniciar</button>
+        <button onclick="pararContagem()" class="btnParar">Parar</button>
+        <button onclick="zerarContagem()" class="btnZerar">Zerar</button>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

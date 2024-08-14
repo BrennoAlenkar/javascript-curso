@@ -1,14 +1,27 @@
 
+function IniciarContagem() {
+    let res = document.querySelector('.res').innerHTML;
+    let audio = document.querySelector('.som');
+    tempo = setInterval(() => {
+        let cronometro = document.querySelector('.res').innerHTML;
+        cronometro = parseInt(cronometro) - 1;
+        if (cronometro === 0) {
+            document.querySelector('.res').innerHTML = 'Tempo Esgotado, Descanso!'
+            audio.play();
+            pararContagem()
+            
+        } else {
+            document.querySelector('.res').innerHTML = cronometro;
+        }
 
-function somarNumeros() {
-    let res = document.querySelector('.teste');
-    let nome = document.getElementById('nome').value;
-    nome = nome.toLowerCase();
 
-    if (nome === 'brenno alencar') {
-        res.innerHTML = 'Melhor programador que Existe!'
-    } else {
-        res.innerHTML = 'Voce consegue! nao desista.'
-    }
+    }, 1000);
+}
 
+function pararContagem() {
+    clearInterval(tempo)
+}
+
+function zerarContagem() {
+    location.reload()
 }
